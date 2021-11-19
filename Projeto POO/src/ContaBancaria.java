@@ -1,12 +1,10 @@
 public class ContaBancaria extends Usuario{
-    private float dinheiro;
-    private String nome,agencia,conta;
 
-    public ContaBancaria(String senha,String nome, String agencia, String conta) {
-        super(senha);
-        this.nome = nome;
-        this.agencia = agencia;
-        this.conta = conta;
+    ContaBancaria() {
+        super();
+    }
+    ContaBancaria(int i){
+        super(i);
     }
 
     void deposito(float dinheiro){

@@ -82,7 +82,7 @@ public class Usuario {
     }
 
 
-    public static boolean existeusernoArquivo(String user, String filename,int posi) {
+    static boolean existeusernoArquivo(String user, String filename,int posi) {
 
         try {
             BufferedReader br = new BufferedReader(
@@ -109,7 +109,7 @@ public class Usuario {
         return false;
     }
 
-    public static double pegarDinheiro(String filename, String agencia){
+    static double pegarDinheiro(String filename, String agencia){
         try {
             double dinheiro;
             BufferedReader br = new BufferedReader(

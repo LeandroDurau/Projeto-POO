@@ -1,29 +1,22 @@
+import java.util.Scanner;
+import java.util.function.DoubleFunction;
+
 public class ContaBancaria extends Usuario{
 
-    ContaBancaria() {
-        super();
-    }
-    ContaBancaria(int i){
-        super(i);
-    }
 
-    void deposito(float dinheiro){
+
+
+    void deposito(double dinheiro){
         this.dinheiro = this.dinheiro + dinheiro;
     }
 
-    void retirada(float dinheiro){
+    void retirada(double dinheiro){
         this.dinheiro = this.dinheiro - dinheiro;
     }
 
-    void pagarConta(float dinheiro, String conta){
+    void pix(double dinheiro, String conta){
         this.dinheiro = this.dinheiro - dinheiro;
     }
-
-    void investir(float dinheiro, String invest){
-        this.dinheiro = this.dinheiro - dinheiro;
-    }
-
-
 
     void propriedadeConta(){
         System.out.printf("");
